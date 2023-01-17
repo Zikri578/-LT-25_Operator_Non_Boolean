@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Non Boolean - Javascript</title>
+    <script src="operatorNonBoolean.js"></script>
+</head>
+
+<body>
+    <script>
+        // dalam operator non boolean ini lanjutan dari materi sebelumnya yaitu ; Truthy and Falsy, didalam console ini string yang ada nilainya yaitu: Hello dengan string yang nilainya kosong
+        // ketika dalam operasi aritmatika or ketika benar bertemu salah maka yang akan ditampilkan yaitu benar. maka output ini akan menampilkan hello. 
+        document.writeln("Hello" || "");
+
+        // didalam materi truthy and falsy ini, dimana truthy akan bernilai benar ketika ada array kosong atau [], objek kosong atau {}, string bernilai atau "hello", dan angka bernilai atau 5
+        // berdasarkan hasil ini ketika dalam operasi aritmatika or ada salah satu bernilai benar maka akan menampilkan yang benar, maka output ini akan menampilkan array kosong atau []
+        document.writeln("" || []);
+
+        // didalam materi truthy and falsy ini, dimana truthy akan bernilai benar ketika ada string bernilai
+        // berdasarkan hasil ini ketika ada yang bernilai benar semua maka yang akan diambil yaitu yang pertama, maka output ini akan menampilkan 0.
+        document.writeln("0" || "NOL");
+
+        // didalam materi truthy and falsy ini, dimana falsy akan bernilai false ketika ada : false, nol (0), string kosong (""), null, undefined, dan NaN
+        // berdasarkan hasil ini ketika dalam operasi aritmatika or ada salah satu bernilai benar maka akan menampilkan yang benar, maka output ini akan menampilkan string bernilai "NOL".
+        document.writeln(0 || "NOL");
+
+        // didalam materi truthy and falsy ini, dimana falsy akan bernilai false ketika ada : false, nol (0), string kosong (""), null, undefined, dan NaN
+        // berdasarkan hasil ini ketika dalam operasi aritmatika or ada salah satu bernilai benar maka akan menampilkan yang benar, maka output ini akan menampilkan string bernilai "null".
+        document.writeln(null || "null");
+
+        // didalam materi truthy and falsy ini, dimana falsy akan bernilai false ketika ada : false, nol (0), string kosong (""), null, undefined, dan NaN
+        // berdasarkan hasil ini ketika dalam operasi aritmatika or ada salah satu bernilai benar maka akan menampilkan yang benar, maka output ini akan menampilkan string bernilai "undefined".
+        document.writeln(undefined || "undefined");
+
+        // didalam materi truthy and falsy ini, dimana ketika ada dua buah yang bernilai salah maka yang akan diambil yaitu yang bagian terakhir
+        // berdasarkan hasil ini, maka output ini akan menampilkan yaitu false.
+        document.writeln(0 || false);
+    </script>
+</body>
+
+</html>
